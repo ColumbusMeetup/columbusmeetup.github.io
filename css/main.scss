@@ -6,16 +6,25 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+// scheme: http://paletton.com/#uid=3000u0kq0r6fvE+kMuqsykv-ucT
+$base-font-family: "Open Sans", sans-serif;;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #333;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #F25555;
+$brand-color-dk:   #670000;
+$brand-color-lt:   #FF8484;
+$secondary-color:  #188282;
+$secondary-color-dk: #003E3E;
+$secondary-color-lt: #5FB9B9;
+$action-color:     #93CA26;
+$action-color-dk:  #406000;
+$action-color-lt:  #CCF37E;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -26,6 +35,11 @@ $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
+
+$screen-sm-min:    35.5em;
+$screen-md-min:    48em;
+$screen-lg-min:    64em;
+$screen-xl-min:    80em;
 
 
 

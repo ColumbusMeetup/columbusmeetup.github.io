@@ -4,20 +4,45 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Upcoming meetups</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      {% assign post_seconds = post.date | date: "%s" %}
+      {% assign seconds_until_event = "now" | date: "%s" | minus: post_seconds %}
+      {% if seconds_until_event < 0 %}
+        <li>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <small>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}, {{ post.time }}</span>
+            </small>
+          </h2>
+        </li>
+      {% else %}
+        {% assign post_offset = forloop.index | minus: 1 %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  </ul>
 
+  <h1 class="page-heading">Recent meetups</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts offset:post_offset limit:10 %}
+      <li>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <small>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}, {{ post.time }}</span>
+          </small>
         </h2>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  {% comment %}
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  {% endcomment %}
 
 </div>
