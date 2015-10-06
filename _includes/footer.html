@@ -1,6 +1,11 @@
 <footer>
   <ul class="contact-list">
     <li>&copy; 2015 Columbus Meetup</li>
+    {% for page in site.pages %}
+      {% if page.title %}
+        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
     <li><a href="mailto:{{ site.email }}">Contact us</a></li>
   </ul>
 </footer>
