@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mission Coffee Meetup"
-date:   2015-08-19 19:00:00
+date:   2015-08-19 19:00:00-0400
 time: "4:00 pm - 7:00 pm"
 ---
 **Location:** [Mission Coffee, 11 Price Ave, Columbus, OH 43201](https://www.google.com/maps/place/Mission+Coffee+Co.+LLC/@39.9805566,-83.0046931,19.5z/data=!4m2!3m1!1s0x0000000000000000:0x0c6fccff56e2d8df!6m1!1e1){:target="_blank" _}
