@@ -11,6 +11,12 @@ layout: default
   </div>
 
   <article class="post-content">
+    <p><b>Location:</b> {{ page.location }}</p>
+
+    <p><b>Date:</b> {{ page.starttime | date: "%A, %B %-d, %Y" }}</p>
+
+    <p><b>Time:</b> {{ page.starttime | date: "%-I:%M %P" }} - {{ page.endtime | date: "%-I:%M %P" }}</p>
+
     {{ content }}
   </article>
 </div>

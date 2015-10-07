@@ -2,18 +2,18 @@
 layout: default
 ---
 <div class="home">
-  <h1 class="page-heading">Upcoming meetups</h1>
+  <h1 class="page-heading">Upcoming events</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
-      {% assign post_seconds = post.date | date: "%s" %}
-      {% assign seconds_until_event = "now" | date: "%s" | minus: post_seconds %}
-      {% if seconds_until_event < 0 %}
+      {% assign post_seconds = post.endtime | date: "%s" %}
+      {% assign seconds_until_post = "now" | date: "%s" | minus: post_seconds %}
+      {% if seconds_until_post < 0 %}
         <li>
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             <small>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}, {{ post.time }}</span>
+              <span class="post-meta">{{ post.starttime | date: "%A, %b %-d, %Y, %-I:%M %P" }} - {{ post.endtime | date: "%-I:%M %P" }}</span>
             </small>
           </h2>
         </li>
@@ -24,7 +24,7 @@ layout: default
     {% endfor %}
   </ul>
 
-  <h1 class="page-heading">Recent meetups</h1>
+  <h1 class="page-heading">Recent events</h1>
 
   <ul class="post-list">
     {% for post in site.posts offset:post_offset limit:10 %}
@@ -32,7 +32,7 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           <small>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}, {{ post.time }}</span>
+            <span class="post-meta">{{ post.starttime | date: "%A, %b %-d, %Y, %-I:%M %P" }} - {{ post.endtime | date: "%-I:%M %P" }}</span>
           </small>
         </h2>
       </li>

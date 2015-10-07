@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
@@ -18,4 +17,23 @@
   <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
   <!--<![endif]-->
+
+  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}">
+  {% endif %}
+
+  {% if page.location %}
+    <meta name="og:description" content="Meetup on {{ page.starttime | date: "%A, %B %-d, %Y" }}, {{ page.starttime | date: "%-I:%M %P" }} - {{ page.endtime | date: "%-I:%M %P" }}">
+  {% elsif page.excerpt %}
+    <meta name="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+  {% else %}
+    <meta name="og:description" content="{{ site.description }}">
+  {% endif %}
+  {% if page.image %}
+    <meta name="og:image" content="{{ page.image }}">
+  {% elsif site.image %}
+    <meta name="og:image" content="{{ site.image }}">
+  {% endif %}
 </head>
