@@ -12,10 +12,8 @@ layout: default
         <li>
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <small>
-              <span class="post-meta">{{ post.starttime | date: "%A, %b %-d, %Y, %-I:%M %P" }} - {{ post.endtime | date: "%-I:%M %P" }}</span>
-            </small>
           </h2>
+          <p class="post-meta">{{ post.starttime | date: "%A, %b %-d, %Y, %-I:%M %P" }} - {{ post.endtime | date: "%-I:%M %P" }}{% if site[post.group] %}<br>{{ site[post.group].title }}{% endif %}</p>
         </li>
       {% else %}
         {% assign post_offset = forloop.index | minus: 1 %}
@@ -31,10 +29,8 @@ layout: default
       <li>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <small>
-            <span class="post-meta">{{ post.starttime | date: "%A, %b %-d, %Y, %-I:%M %P" }} - {{ post.endtime | date: "%-I:%M %P" }}</span>
-          </small>
         </h2>
+        <p class="post-meta">{{ post.starttime | date: "%A, %b %-d, %Y, %-I:%M %P" }} - {{ post.endtime | date: "%-I:%M %P" }}{% if site[post.group] %}<br>{{ site[post.group].title }}{% endif %}</p>
       </li>
     {% endfor %}
   </ul>

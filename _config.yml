@@ -1,14 +1,20 @@
 # Site settings
-title: Short North Entrepreneurial Meetup
+title: Columbus Meetup
 email: chrisyuska@gmail.com
 description: >
-  Get some work done on your side project or startup and meet some other
-  developers and entrepreneurs in the Columbus area in the process.
+  Tech and entrepreneurial meetups in the Columbus, Ohio area.
 url: "http://columbusmeetup.com" # the base hostname & protocol for your site
-twitter_username: notchrisyuska
-github_username:  chrisyuska
+github_username:  ColumbusMeetup
 timezone: America/New_York
 
 # Build settings
 markdown: kramdown
 highlighter: pygments
+
+# group settings
+groups: snem
+snem:
+  title: Short North Entrepreneurial Meetup
+  description: >
+    Get some work done on your side project or startup and meet some other
+    developers and entrepreneurs in the Columbus area in the process.

@@ -84,12 +84,33 @@ footer {
 
     > li {
         margin-bottom: $spacing-unit;
+
+        h2, h3 {
+          margin-bottom: 0;
+        }
     }
 }
 
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    margin-top: 0;
+}
+
+.group-list {
+    padding-left: 1em;
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        h3 {
+          margin: 0.5em 0 0;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
 }
 
 .post-link {
@@ -97,7 +118,9 @@ footer {
     font-size: 24px;
 }
 
-
+.n-m-b {
+  margin-bottom: 0;
+}
 
 /**
  * Posts

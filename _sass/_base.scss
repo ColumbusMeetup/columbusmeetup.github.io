@@ -23,12 +23,12 @@ a {
   color: $brand-color;
   text-decoration: none;
 
-  &:visited, &:hover {
-    color: darken($brand-color, 15%);
+  &:visited {
+    color: $brand-color;
   }
 
-  &:hover {
-    color: darken($brand-color, 50%);
+  &:hover, &:active {
+    color: darken($brand-color, 40%);
     text-decoration: none;
   }
 }

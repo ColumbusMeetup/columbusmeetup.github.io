@@ -1,6 +1,7 @@
 ---
 layout:    post
 title:     "Mission Coffee Meetup"
+group: snem
 starttime: 2015-08-27 16:00:00-0400
 endtime:   2015-08-27 19:00:00-0400
 location: |
