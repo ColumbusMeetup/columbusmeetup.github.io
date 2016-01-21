@@ -4,11 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Columbus, Ohio deserves a better tech and entrepreneurial community.  Join our meetups and help us bridge the gap between quarterly and annual events in Columbus.
+{{ site.description }}
 
-Subscribe to the mailing list.  We'll let you know whenever there's an upcoming event to check out.
+Interested in attending our meetups?  Sign up for the mailing list and we'll keep you in the loop.
 
-<h2 class="n-m-b">Our events</h2>
+Interested in joining our cause?  <a href="mailto:{{ site.email }}">Contact us</a>.
+
+<h2 class="n-m-b">Our meetups:</h2>
 
 <ul class="group-list">
   {% assign groups = site.groups | split: ' ' %}
