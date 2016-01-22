@@ -1,7 +1,7 @@
 ---
 layout:    post
 title:     "Mission Coffee Meetup (cancelled)"
-group: snem
+group: khm
 starttime: 2015-11-24 16:00:00-0400
 endtime:   2015-11-24 19:00:00-0400
 location: |

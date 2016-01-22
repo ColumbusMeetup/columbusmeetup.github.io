@@ -12,9 +12,9 @@ markdown: kramdown
 highlighter: pygments
 
 # group settings
-groups: snem
-snem:
-  title: Short North Entrepreneurial Meetup
+groups: khm
+khm:
+  title: Keep Hacking Meetup
   description: >
-    Get some work done on your side project or startup and meet some other
-    developers, designers, and entrepreneurs in the Columbus area in the process.
+    Keep making progress on your project or startup every week and meet some other 
+    developers, designers, and entrepreneurs in the process.

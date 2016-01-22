@@ -21,6 +21,6 @@ Interested in joining our cause?  <a href="mailto:{{ site.email }}">Contact us</
   </li>
   {% endif %}{% endfor %}
   <li>
-    <h3>More coming soon...</h3>
+    <h3>More meetups coming soon...</h3>
   </li>
 </ul>

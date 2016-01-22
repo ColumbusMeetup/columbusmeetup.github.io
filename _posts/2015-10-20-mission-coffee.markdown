@@ -1,7 +1,7 @@
 ---
 layout:    post
 title:     "Mission Coffee Meetup (back to normal)"
-group: snem
+group: khm
 starttime: 2015-10-20 16:00:00-0400
 endtime:   2015-10-20 19:00:00-0400
 location: |
