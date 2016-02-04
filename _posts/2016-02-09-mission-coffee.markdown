@@ -10,7 +10,7 @@ location: |
 
 Have a project or startup you're working on?  Come work on it at the coffee shop for a few hours and meet some other people doing the same.
 
-Still figuring out your project?  Let's chat and bounce ideas around.
+Still figuring out your project?  Let's brainstorm.
 
 Working on a new design?  Get a second set of eyes for feedback.
 
