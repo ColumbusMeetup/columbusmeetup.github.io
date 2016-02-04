@@ -9,7 +9,7 @@ timezone: America/New_York
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 # group settings
 groups: khm
