@@ -5,7 +5,7 @@ layout: default
   <h1 id="upcoming-events-heading" class="page-heading">Upcoming events</h1>
 
   <ul id="upcoming-events" class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:10 %}
       <li class="event" data-starttime="{{ post.starttime | date: "%c" }}" data-endtime="{{ post.endtime | date: "%c" }}">
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
