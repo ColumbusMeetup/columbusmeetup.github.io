@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewbox="0 0 192 192">
+  <circle id="arch-bot" cx="96" cy="396" r="280" stroke="#000" stroke-width="8" fill="none" />
+  <circle id="arch-top" cx="96" cy="396" r="320" stroke="#000" stroke-width="8" fill="none" />
+  <path id="arch-exes" d="
+    M0 132.97 L 30.171 82.844 L 76.8 116.659 L 117.943 76.7653 L 153.6 121.989 L 205.714 95.396
+    M-13.714 95.396 L 38.4 121.989 L 74.057 76.753 L 115.2 116.659 L 161.829 82.844 L 192 132.97
+  " stroke="#000" stroke-width="4" fill="none" />
+  <path id="arch-supports" d="
+    M38.4 121.989 L 30.171 82.844 M 161.829 82.844 L 153.6 121.989
+  " stroke="#000" stroke-width="6" fill="none" />
+  <path id="arch-title" d="
+    M19.2 85.353 L 16.8 75.645 Q 39.429 70.885 36.857 56.107 A 320 320 0 0 1 155.143 56.107
+    Q 155.143 70.885 175.2 75.645 L 172.8 85.353
+  " stroke="#000" stroke-width="4" fill="none" />
+  <path id="light-posts" d="
+    M0 132.97 L 3.429 142.365
+    M19.2  126.738 L 21.943 136.355
+    M38.4 121.989 L 40.457 131.775
+    M57.6 118.646 L 58.971 128.551
+    M76.8 116.659 L 77.486 126.636
+    M96 116 L 96 126
+    M115.2 116.659 L 114.514 126.636
+    M134.4 118.646 L 133.029 128.551
+    M153.6 121.989 L 151.543 131.775
+    M172.8 126.738 L 170.057 136.355
+    M192 132.97 L 188.571 142.365
+  " stroke="#000" stroke-width="4" fill="none" />
+  <circle cx="3.429" cy="142.365" r="3" fill="#FFE97A" />
+  <circle cx="21.943" cy="136.355" r="3" fill="#FFE97A" />
+  <circle cx="40.457" cy="131.775" r="3" fill="#FFE97A" />
+  <circle cx="58.971" cy="128.551" r="3" fill="#FFE97A" />
+  <circle cx="77.486" cy="126.636" r="3" fill="#FFE97A" />
+  <circle cx="96" cy="126" r="3" fill="#FFE97A" />
+  <circle cx="114.514" cy="126.636" r="3" fill="#FFE97A" />
+  <circle cx="133.029" cy="128.551" r="3" fill="#FFE97A" />
+  <circle cx="151.543" cy="131.775" r="3" fill="#FFE97A" />
+  <circle cx="170.057" cy="136.355" r="3" fill="#FFE97A" />
+  <circle cx="188.571" cy="142.365" r="3" fill="#FFE97A" />
+</svg>
